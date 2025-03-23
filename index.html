@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://www.toptal.com/designers/subtlepatterns/uploads/old_wall.png') no-repeat center center/cover;
+            color: #2E2E2E;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #8B0000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #D4AF37;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        main h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .welcome-text {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+        }
+
+        .fun-fact, .writing-prompt {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #D4AF37;
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.7);
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+        }
+
+        .section h3 {
+            font-size: 1.8em;
+            color: #8B0000;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        .read-more {
+            display: inline-block;
+            background: #D4AF37;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            margin-top: 10px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .read-more:hover {
+            background: #A67B5B;
+        }
+
+        /* Subscribe Section (Moved Above Footer) */
+        .subscribe {
+            margin: 40px auto;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 50%;
+        }
+
+        .subscribe h3 {
+            margin-bottom: 10px;
+        }
+
+        .subscribe input {
+            padding: 10px;
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .subscribe button {
+            background-color: #A67B5B;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .subscribe button:hover {
+            background-color: #8B5E3C;
+        }
+
+        footer {
+    text-align: center;
+    background-color: #8B0000;
+    color: white;
+    padding: 10px;
+}
+
+footer a {
+    color: #FFD700; /* Gold color */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #FF4500; /* Orange color on hover */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Window To My World</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Stories.html">Stories</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            
+
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Discover Stories, Thoughts, and Moments</h2>
+        <p class="welcome-text">Welcome to my world of words! Here, I share my experiences, creative stories, and thoughts that inspire and connect.</p>
+
+        <!-- Quote of the Day -->
+        <div class="fun-fact">
+            🌟 Quote of the Day: "Believe in yourself, and you're halfway there." - Theodore Roosevelt
+        </div>
+
+        <div class="section">
+            <h3>🌟 Featured Story: The Lost Star</h3>
+            <p>
+                In a distant galaxy, a young explorer named Liana stumbles upon a star that has mysteriously lost its light. 
+                As she embarks on a journey to uncover the truth, she discovers a secret that could change the universe forever...
+            </p>
+            <a href="continue-reading-2.html" class="read-more">Read More →</a>
+        </div>
+    </main>
+
+    <!-- Subscribe Section (Moved Above Footer) -->
+    <div class="subscribe">
+        <h3>Stay Updated</h3>
+        <p>Subscribe to get fresh stories and exclusive content directly to your inbox!</p>
+        <input type="email" id="subscribe-email" placeholder="Enter your email">
+        <button id="subscribe-btn">Subscribe</button>
+        <p id="subscribe-msg"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Diary Blog. All Rights Reserved.
+            <p>
+                <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a> |
+        <a href="https://www.instagram.com/window_to_my_world" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <details>
+            <summary>📜 Privacy Policy & Terms of Use</summary>
+            <p><strong>Privacy Policy:</strong> We respect your privacy. Your data will not be shared.</p>
+            <h3>🔹 Information We Collect</h3>
+    <p>We may collect your name, email address, and other details when you contact us or subscribe to updates.</p>
+    <h3>🔹 Content Ownership</h3>
+    <p>All text, images, and content on this website belong to us unless stated otherwise. Do not copy or reuse content without permission.</p>
+            <p><strong>Terms of Use:</strong> By using this site, you agree to our guidelines.</p>
+        </details>
+       
+       
+       
+       
+       
+        <p>✨ Keep going, keep growing! ✨</p>
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("subscribe-btn").addEventListener("click", function() {
+            var email = document.getElementById("subscribe-email").value;
+            if (email !== "") {
+                document.getElementById("subscribe-msg").innerHTML = "Thank you for subscribing!";
+            } else {
+                document.getElementById("subscribe-msg").innerHTML = "Please enter your email address.";
+            }
+        });
+    </script>
+
+
+
+
+
+
+</body>
+</html>
