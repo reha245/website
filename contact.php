@@ -1,10 +1,14 @@
 <?php
-$servername = "localhost";
-$username = "root"; // Default XAMPP username
-$password = ""; // Default XAMPP password (leave empty)
-$dbname = "contact_db";
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-// Create connection
+// InfinityFree database details:
+$servername = "sql310.infinityfree.com"; // Your server name
+$username = "if0_38580117";               // Your DB username
+$password = "Ec5Tna1vGoTo75q";            // Your vPanel password
+$dbname = "if0_38580117_message";         // Your DB name
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
@@ -18,14 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
 
-    // Prepare SQL query to prevent SQL injection
-    $stmt = $conn->prepare("INSERT INTO messages (name, email, message) VALUES (?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $name, $email, $message);
 
     if ($stmt->execute()) {
-        echo "<script>alert('Message sent successfully!'); window.location.href='contact.html';</script>";
+        // Redirect to home page
+        echo "<script>alert('Message sent successfully!'); window.location.href='index.html';</script>";
     } else {
-        echo "<script>alert('Error sending message.'); window.location.href='contact.html';</script>";
+        // Redirect to home page on error too
+        echo "<script>alert('Error sending message.'); window.location.href='index.html';</script>";
     }
 
     $stmt->close();
